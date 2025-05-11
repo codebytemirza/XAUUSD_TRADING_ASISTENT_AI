@@ -288,7 +288,7 @@ class XAUUSDTradingBot:
 
 def main():
     # Initialize trading bot with your Groq API key
-    api_key = "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"  # Replace with your actual Groq API key
+    api_key = "api_key_here"  # Replace with your actual Groq API key
     bot = XAUUSDTradingBot(api_key=api_key)
     
     while True:
