@@ -171,7 +171,7 @@ class XAUUSDTradingBot:
             start_date = end_date - timedelta(days=bars)
             
             rates = mt5.copy_rates_range(
-                "XAUUSDm",
+                "XAUUSD",
                 timeframe,
                 start_date,
                 end_date
@@ -267,7 +267,7 @@ class XAUUSDTradingBot:
             signal = self.generate_trading_signal(market_data, features)
             
             # Check current spread
-            symbol_info = mt5.symbol_info("XAUUSDm")
+            symbol_info = mt5.symbol_info("XAUUSD")
             current_spread = symbol_info.spread if symbol_info else None
             
             result = {
